@@ -1,0 +1,580 @@
+body {
+    background-color: #1d1d1d;
+}
+
+h1, h2, h3, h4, h5, h6, p, label {
+    color: white;
+}
+
+.fixo-top {
+    top: 0;
+    position: sticky;
+    z-index: 101;
+}
+
+.font-h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.btn-login {
+    height: 60px;
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn-login:hover {
+    color: white;
+    background-color: black;
+    transition: background-color 250ms linear;
+}
+
+.div-input{
+    position: relative;
+}
+
+.div-input input {
+    padding: 10px 0;
+    font-size:20px;
+    color: white;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+    background: transparent;
+}
+
+.div-input label {
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 10px 0;
+    font-size:20px;
+    color: #e6e6e6;
+    pointer-events:none;
+    transition: .5s;
+}
+
+.div-input input:focus ~ label,
+.div-input input:valid ~ label {
+    top: -25px;
+    left: 0;
+    color: white;
+    font-size: 16px;
+}
+
+.div-input input:focus {
+    border-width: 4px;
+    border-color: white;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+    transition: border-width 50ms linear;
+}
+
+.m-12 {
+    margin-left: 12px;
+}
+
+#registoFormErro {
+    display: none;
+}
+
+#loginFormErro {
+    display: none;
+}
+
+.container-utilizador {
+    display: none;
+    flex-direction: column;
+    width: 320px;
+    height: 230px;
+    background: #242424;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 20px;
+    top: 50px;
+    right: 10px;
+    margin-top: 15px;
+    position: fixed;
+    z-index: 99;
+}
+
+.btn-login-sm {
+    height: 40px;
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.btn-login-sm:hover {
+    color: white;
+    background-color: black;
+    transition: background-color 250ms linear;
+}
+
+#btn-admin {
+    display: none;
+}
+
+#email-container-utilizador {
+    max-width: 220px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+#nome-container-utilizador {
+    max-width: 220px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.card-flex {
+    width: 286px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.card-flex-nome {
+    max-width: 200px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.card-flex h5 {
+    margin-bottom: 0px;
+}
+
+.btn-homePage {
+    text-decoration: none;
+    border: none;
+    font-size: 24px;
+    color: black;
+    width: 240px;
+    height: 60px;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+}
+   
+.btn-homePage:hover {
+    animation: ani 7s linear infinite;
+    border: none;
+    font-size: 28px;
+}
+
+@keyframes ani {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.btn-homePage:before {
+    content: '';
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+}
+
+.btn-homePage:hover::before {
+    filter: blur(20px);
+}
+
+.btn-homePage:active {
+    font-size: 30px;
+}
+
+.fa-user {
+    color: white !important;
+}
+
+.alerta {
+    top: 80px;
+    height: 60px;
+    display: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 3px solid;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.alertaVerde {
+    background-color: #00BB6C;
+    border-color: #008000;
+}
+
+.alertaVermelho {
+    background-color: #fc7e7e;
+    border-color: red;
+}
+
+.alertaAmarelo {
+    background-color: #fcd07e;
+    border-color: orange;
+}
+
+.alerta p{
+    margin-bottom: 0px;
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: normal;
+    display: flex;
+    flex-direction: row;
+    background-color: #303030;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 45px;
+}
+
+.container-card {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.container-card-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: #202020;
+}
+
+.container-card-flex-meme {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 415px;
+    border-radius: 10px;
+    background-color: #202020;
+}
+
+.container-card-flex img, .container-card-flex-meme img {
+    padding: 15px;
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: scale-down;
+}
+
+.container-card-flex p, .container-card-flex-meme p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 2; 
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.container-card-flex button, .container-card-flex-meme button {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.numero-bola {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 18px;
+    background-color: #0D6EFD;
+    margin-right: 5px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.canvas-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 40px;
+}
+
+#ImageMeme {
+    max-width: 390px;
+    height: 390px;
+    border: 1px solid #000000;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+.containerTextoMeme {
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.containerTextoMeme input {
+    background-color: #383838 ;
+    color: white;
+}
+
+#containerTextoMemeSettings1, #containerTextoMemeSettings2 {
+    width: 56px;
+    height: 56px;
+    border-radius: 0px 7px 7px 0px;
+    border-left: 2px solid black;
+    background-color: #0D6EFD;
+    padding-left: 12px;
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+.containerTextoMemeCor {
+    width: 56px;
+    height: 56px;
+    background-color: #242424;
+    padding-left: 12px;
+    padding-top: 12px;
+    border-left: 2px solid black;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+	width: 32px;
+	height: 32px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.btnCriarMeme {
+    width: 100%;
+    height: 60px;
+    font-size: 28px;
+    margin-top: 25px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    visibility: hidden;
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    border: 3px dashed rgba(150, 150, 150, 0.8);
+    cursor: move;
+    z-index: 100;
+    color: #000000;
+    text-shadow: 0px 0px 3px #ffff00;
+    text-align: center;
+}
+
+#caixaTexto1 {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#caixaTexto2 {
+    margin-left: 20px;
+    margin-top: 95px;
+}
+
+.ui-rotatable-handle {
+    background: url("https://cdn.jsdelivr.net/jquery.ui.rotatable/1.0.1/rotate.png");
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    bottom: -18px;
+    left: -18px;
+  }
+
+.containerSettings {
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    top: -20px;
+    margin-left: auto;
+    width: 160px;
+    background: #242424;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.containerAlign {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 130px;
+    height: 40px;
+    background: #181818;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.btnAlign {
+    width: 30px;
+    height: 30px;
+    background: #242424;
+    border-radius: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+#alignLeft1, #alignLeft2, #alignCenter1, #alignCenter2, #alignRight1, 
+#alignRight2, #bold1, #bold2, #italic1, #italic2, #underline1, #underline2 {
+    color: white !important;
+}
+
+#texto1S, #texto2S {
+    color: black;
+}
+
+.fa-align-left, .fa-align-center, .fa-align-right, .fa-bold, .fa-italic, .fa-underline {
+    margin-left: 6px;
+    margin-top: 7px;
+}
+
+.containerFontSize {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.containerFontSize p {
+    font-size: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.containerFontSizeInput {
+    width: 50px;
+    height: 30px;
+    background: #181818;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+}
+
+.noTouch {
+    display: flex;
+    flex-direction: column;
+}
+
+.SadTrollFace {
+    margin: auto;
+}
+
+.SadTrollFace img {
+    width: 120px;
+}
+
+.visivel {
+    display: none;
+}
+
+.div-olho-password {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50px;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+.olho-password {
+    padding-left: 15px;
+    cursor: pointer;
+    color: white !important;
+}
+
+.div-input input:focus ~ .div-olho-password {
+    border-width: 4px;
+    border-color: white;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+    transition: border-width 50ms linear;
+}
+
+#modal-content {
+    background-color: #242424;
+}
+
+#imagePerfil, #image{
+    background-color: #242424;
+    color: white;
+}
+
+#sad-troll-face {
+    filter: invert(50%) sepia(4%) saturate(12%) hue-rotate(134deg) brightness(89%) contrast(81%);
+}
+
+.meu-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #modalImagem{
+        width: 360px;
+    }
+
+    .olho-password {
+        padding-left: 5px;
+    }
+
+    .alerta {
+        height: 85px;
+    }
+
+    .meu-footer {
+        flex-direction: column;
+    }
+
+    .removeText {
+        display: none;
+    }
+}

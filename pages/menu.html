@@ -1,0 +1,32 @@
+<div id="menu-theme" class="fixed-top navbar navbar-expand-lg navbar-light border-bottom bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="home.php">
+            <img src="../resources/images/Logo.svg" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
+            Meme Creator
+        </a>
+        <div class="col d-flex flex-row justify-content-end">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item d-flex justify-content-center">
+                    <button id="btn-theme" style="font-weight: bold; margin-right: 10px;" class="btn btn-dark"><i 
+                        id="btn-theme-icon" style="padding: 8px;" class="fas fa-moon fa-lg"></i><span class="removeText">Tema</span></button>
+                    <button id="btn-utlizador" style="font-weight: bold;" class="btn btn-primary"><i
+                        style="padding: 8px;" class="fas fa-user fa-lg"></i><span class="removeText">Entrar</span></button>
+                </li>
+            </ul>
+        </div>
+        <div class="container-utilizador">
+            <div class="d-flex flex-row">
+                <p style="font-weight: bold;">Nome:</p>
+                <p id="nome-container-utilizador" class="ms-1"></p>
+            </div>
+            <div class="d-flex flex-row">
+                <p style="font-weight: bold;">Email:</p>
+                <p id="email-container-utilizador" class="ms-1"></p>
+            </div>
+            <button id="btn-admin" class="btn-login-sm">Painel de Administração</button>
+            <button id="btn-area-utilizador" class="btn-login-sm">Perfil</button>
+            <button id="btn-terminar-sessao" class="btn-login-sm">Terminar Sessão</button>
+        </div>
+    </div>
+</div>
+<script src="../js/principal/menu.js"></script>
