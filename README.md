@@ -1,6 +1,12 @@
 # Memecreator
  web application to crete memes with login system
 
+## Home Page
+Website home page Light Mode
+![Login Screen](https://github.com/TwickE/ReadmeImages/blob/main/MCHome.png?raw=true)
+Website home page Dark Mode
+![Login Screen](https://github.com/TwickE/ReadmeImages/blob/main/MCHomeDark.png?raw=true)
+
 ## Login Page
 User login with e-mail and password
 ![Login Screen](https://github.com/TwickE/ReadmeImages/blob/main/MCLogin.png?raw=true)
@@ -8,12 +14,6 @@ User login with e-mail and password
 ## Register Page
 User registration with first name, last name, email, password and confirm password
 ![Login Screen](https://github.com/TwickE/ReadmeImages/blob/main/MCRegisto.png?raw=true)
-
-## Home Page
-Website home page Light Mode
-![Login Screen](https://github.com/TwickE/ReadmeImages/blob/main/MCHome.png?raw=true)
-Website home page Dark Mode
-![Login Screen](https://github.com/TwickE/ReadmeImages/blob/main/MCHomeDark.png?raw=true)
 
 ## User Profile Page
 User profile page, where the user can change the first name, last name and profile picture
