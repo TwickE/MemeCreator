@@ -1,5 +1,5 @@
 # Memecreator
- Web application to crete memes with login system
+ A web application to create memes built with HTML CSS JavsScript PHP and MySQL
 
 ## Home Page
 Website home page Light Mode
